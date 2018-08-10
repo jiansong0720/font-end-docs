@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "init": "summary -b -t",
+    "dev": "gitbook serve",
+    "build": "gitbook build"
+  },
+  "dependencies": {
+    "summarybuilder": "^1.4.5"
+  }
+}
