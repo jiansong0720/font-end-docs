@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>CSS postcss · 前端文档</title>
+        <title>注释规范 · 前端文档</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -58,7 +58,7 @@
 
     
     
-    <link rel="prev" href="CSS NEXT.html" />
+    <link rel="prev" href="代码规范-JavaScript-standard.html" />
     
 
     </head>
@@ -128,9 +128,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1.1" data-path="CSS NEXT.html">
+        <li class="chapter " data-level="1.2.1.1" data-path="../技术文档/CSS NEXT.html">
             
-                <a href="CSS NEXT.html">
+                <a href="../技术文档/CSS NEXT.html">
             
                     
                     CSS Next
@@ -141,9 +141,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.1.2" data-path="CSS 可用特性.html">
+        <li class="chapter " data-level="1.2.1.2" data-path="../技术文档/CSS 可用特性.html">
             
-                <a href="CSS 可用特性.html">
+                <a href="../技术文档/CSS 可用特性.html">
             
                     
                     CSS postcss
@@ -173,9 +173,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.2.1" data-path="code snippet.html">
+        <li class="chapter " data-level="1.2.2.1" data-path="../技术文档/code snippet.html">
             
-                <a href="code snippet.html">
+                <a href="../技术文档/code snippet.html">
             
                     
                     code snippet
@@ -268,9 +268,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../项目规范/数据处理规范.html">
+        <li class="chapter " data-level="1.4.2" data-path="数据处理规范.html">
             
-                <a href="../项目规范/数据处理规范.html">
+                <a href="数据处理规范.html">
             
                     
                     数据请求处理规范
@@ -281,9 +281,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="../项目规范/代码规范-JavaScript-standard.html">
+        <li class="chapter " data-level="1.4.3" data-path="代码规范-JavaScript-standard.html">
             
-                <a href="../项目规范/代码规范-JavaScript-standard.html">
+                <a href="代码规范-JavaScript-standard.html">
             
                     
                     代码规范
@@ -294,9 +294,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.4" data-path="../项目规范/代码注释规范.html">
+        <li class="chapter active" data-level="1.4.4" data-path="代码注释规范.html">
             
-                <a href="../项目规范/代码注释规范.html">
+                <a href="代码注释规范.html">
             
                     
                     注释规范
@@ -342,7 +342,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >CSS postcss</a>
+        <a href="../.." >注释规范</a>
     </h1>
 </div>
 
@@ -357,136 +357,126 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="css-&#x53EF;&#x7528;&#x7279;&#x6027;----&#x4E0E;css-next&#x65E0;&#x5173;">css &#x53EF;&#x7528;&#x7279;&#x6027; -- &#x4E0E;css next&#x65E0;&#x5173;</h1>
-<pre><code>resolve:
-    &#x56FE;&#x7247;&#x5F15;&#x5165;: background: resolve(&apos;xxx.png&apos;);
-</code></pre><pre><code>inline: &#x5C06;&#x56FE;&#x7247;&#x7F16;&#x8BD1;&#x4E3A; base64 &#x683C;&#x5F0F;
-    baseurl: backround: inline(&apos;xxx.png&apos;)
-</code></pre><pre><code>body {
-  width: width(&apos;xx.png&apos;); /* 320px */
-  height: height(&apos;xx.png&apos;); /* 240px */
-  background-size: size(&apos;xx.png&apos;); /* 320px 240px */
-}
-
-body {
-  width: width(&apos;xx.png&apos;); /* 320px */
-  height: height(&apos;xx.png&apos;); /* 240px */
-  background-size: size(&apos;xx&apos;); /* 320px 240px */
-}
-</code></pre><p>Rucksack</p>
+                                <h1 id="&#x4EE3;&#x7801;&#x6CE8;&#x91CA;&#x89C4;&#x8303;">&#x4EE3;&#x7801;&#x6CE8;&#x91CA;&#x89C4;&#x8303;</h1>
+<h2 id="&#x539F;&#x5219;">&#x539F;&#x5219;</h2>
 <ul>
-<li>&#x81EA;&#x9002;&#x5E94;&#x6A21;&#x5F0F;</li>
+<li><h3 id="&#x6CE8;&#x91CA;&#x4E0D;&#x8981;&#x592A;&#x591A;&#x6CE8;&#x91CD;&#x8D28;&#x800C;&#x4E0D;&#x662F;&#x91CF;">&#x6CE8;&#x91CA;&#x4E0D;&#x8981;&#x592A;&#x591A;,&#x6CE8;&#x91CD;&#x8D28;&#x800C;&#x4E0D;&#x662F;&#x91CF;</h3>
+</li>
 </ul>
-<pre><code>    font-size: responsive [min-font-size] [max-font-size]
-    font-range: [lower-bound] [upper-bound]
-
-    &#x4F8B;:
-    html {
-      font-size: responsive 12px 21px;
-      font-range: 420px 1280px;
-    }
-    or
-    html {
-      font-size: responsive;
-      min-font-size: 12px;
-      max-font-size: 21px;
-      lower-font-range: 420px;
-      upper-font-range: 1280px;
-    }
-</code></pre><ul>
-<li>position&#x7B80;&#x5199;</li>
-</ul>
-<pre><code>- position: [type] [all];
-- position: [type] [y] [x];
-- position: [type] [top] [x] [bottom];
-- position: [type] [top] [right] [bottom] [left];
-
-&#x4F8B;:
-.foo {
-  position: absolute 0;
+<pre><code>eg.
+// bad
+// &#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x51C6;&#x5907;&#x597D;&#x6570;&#x636E;&#xFF0C;&#x5C31;&#x6E32;&#x67D3;&#x8868;&#x683C; ==&gt; &#x8FD9;&#x662F;&#x53E5;&#x5E9F;&#x8BDD;
+if (data.success &amp;&amp; data.result.length &gt; 0) {
+  renderTable(data);  
 }
 
-.bar {
-  position: relative 20% auto;
-}
-
-.baz {
-  position: fixed 0 20px 10px;
+// good
+const isTableDataReady = data.success &amp;&amp; data.result.length &gt; 0;
+if (isTableDataReady) {
+  renderTable(data);
 }
 </code></pre><ul>
-<li>&#x9009;&#x62E9;&#x5668;</li>
+<li><h3 id="&#x6CE8;&#x91CA;&#x8981;&#x5E2E;&#x52A9;&#x4EE3;&#x7801;&#x5C42;&#x6B21;&#x6E05;&#x6670;&#x5448;&#x73B0;&#x601D;&#x8DEF;">&#x6CE8;&#x91CA;&#x8981;&#x5E2E;&#x52A9;&#x4EE3;&#x7801;&#x5C42;&#x6B21;&#x6E05;&#x6670;,&#x5448;&#x73B0;&#x601D;&#x8DEF;</h3>
+</li>
 </ul>
-<pre><code>:at-least
-&#x4F8B;:
-li:at-least(4) {
-  color: blue;
+<pre><code>eg.
+
+// &#x521B;&#x5EFA;&#x7528;&#x6237;
+init: function() {
+  // &#x83B7;&#x53D6;&#x914D;&#x7F6E;&#x4FE1;&#x606F;
+  const config = getConfig();
+
+  // &#x83B7;&#x53D6;&#x7528;&#x6237;&#x4FE1;&#x606F;
+  const userInfo = getUserInfo();
+
+  // &#x6839;&#x636E;&#x914D;&#x7F6E;&#x548C;&#x7528;&#x6237;&#x4FE1;&#x606F;&#xFF0C;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;
+  doInit(config, userInfo);
+
+  // &#x5982;&#x679C;&#x5B58;&#x5728;&#x81EA;&#x5B9A;&#x4E49;&#x914D;&#x7F6E;&#x65F6;&#x7684;&#x7279;&#x6B8A;&#x903B;&#x8F91;
+  if (config.custom) {
+    ...
+  }
+}
+</code></pre><h2 id="&#x89C4;&#x8303;">&#x89C4;&#x8303;</h2>
+<blockquote>
+<p>&#x89C4;&#x8303;&#x5F15;&#x7528;&#x81EA;Airbnb&#x53CA;jsdoc</p>
+</blockquote>
+<ul>
+<li><p>&#x5355;&#x884C;&#x6CE8;&#x91CA;&#x7528; <code>//</code> ,&#x4F4D;&#x4E8E;&#x4EE3;&#x7801;&#x884C;&#x4E0A;&#x65B9;</p>
+<pre><code>eg.
+
+// bad
+const active = true; // is current tab
+
+// good
+// is current tab
+const active = true;
+</code></pre><p>&#x200B;</p>
+</li>
+<li><p>&#x591A;&#x884C;&#x6CE8;&#x91CA;&#x7528;<code>/** */</code></p>
+<pre><code class="lang-`">eg.
+
+// bad
+// make() returns a new element
+// based on the passed in tag name
+function make(tag) {
+  // ...
+
+  return element;
 }
 
-:at-most
-&#x4F8B;:
-li:at-most(4) {
-  color: blue;
-}
+// good
+/**
+ * make() returns a new element
+ * based on the passed-in tag name
+ */
+function make(tag) {
+  // ...
 
-:between
-&#x4F8B;:
-li:between(4, 6) {
-  color: blue;
-}
-
-:exactly
-&#x4F8B;:
-li:exactly(4) {
-  color: blue;
-}
-</code></pre><ul>
-<li>Native Clearfix</li>
-</ul>
-<pre><code>fix: IE8+
-fix-legacy: IE6/7 +
-.foo {
-  clear: fix;
-}
-
-.bar {
-  clear: fix-legacy;
-}
-</code></pre><ul>
-<li>&#x989C;&#x8272;&#x5FEB;&#x6377;&#x8BED;&#x6CD5;</li>
-</ul>
-<pre><code>&#x4F8B;: 
-.foo {
-  color: rgba(#fff, 0.8);
-}
-</code></pre><ul>
-<li>&#x5C5E;&#x6027;&#x522B;&#x540D;</li>
-</ul>
-<pre><code>&#x4F8B;: 
-@alias {
-  fs: font-size;
-  fw: font-weight;
-}
-.foo {
-  fs: 16px;
-  fw: bold;
-}
-
-&#x7B49;&#x4E8E;:
-.foo {
-  font-size: 16px;
-  font-weight: bold
-}
-
-&#x4E0D;&#x652F;&#x6301;&#x5C5E;&#x6027;&#x5185;&#x52A0;&#x5165;&#x522B;&#x540D;
-@alias {
-  op: opacity;
-}
-
-.foo {
-  /* Not supported! */
-  transition: op 300ms ease;
+  return element;
 }
 </code></pre>
+</li>
+</ul>
+<ul>
+<li><p>&#x51FD;&#x6570;, &#x7C7B;, &#x6A21;&#x5757;&#x4F7F;&#x7528;jsdoc&#x6CE8;&#x91CA;&#x89C4;&#x8303;</p>
+<pre><code>eg.
+
+/**
+ * Book&#x7C7B;&#xFF0C;&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x4E66;&#x672C;.
+ * @constructor
+ * @param {string} title - &#x4E66;&#x672C;&#x7684;&#x6807;&#x9898;.
+ * @param {string} author - &#x4E66;&#x672C;&#x7684;&#x4F5C;&#x8005;.
+ */
+function Book(title, author) {
+  this.title=title;
+  this.author=author;
+}
+
+Book.prototype={
+  /**
+   * &#x83B7;&#x53D6;&#x4E66;&#x672C;&#x7684;&#x6807;&#x9898;
+   * @returns {string|*}
+   */
+  getTitle:function(){
+    return this.title;
+  },
+
+  /**
+   * &#x8BBE;&#x7F6E;&#x4E66;&#x672C;&#x7684;&#x9875;&#x6570;
+   * @param pageNum {number} &#x9875;&#x6570;
+   */
+  setPageNum:function(pageNum){
+    this.pageNum=pageNum;
+  }
+};
+</code></pre><p>&#x200B;</p>
+</li>
+</ul>
+<hr>
+<h3 id="&#x9644;&#x5F55;">&#x9644;&#x5F55;:</h3>
+<p><a href="http://www.css88.com/doc/jsdoc/" target="_blank">jsdoc&#x6587;&#x6863;</a></p>
+
                                 
                                 </section>
                             
@@ -513,7 +503,7 @@ fix-legacy: IE6/7 +
 
             
                 
-                <a href="CSS NEXT.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: CSS Next">
+                <a href="代码规范-JavaScript-standard.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 代码规范">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -525,7 +515,7 @@ fix-legacy: IE6/7 +
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CSS postcss","level":"1.2.1.2","depth":3,"next":{"title":"IDE","level":"1.2.2","depth":2,"ref":"","articles":[{"title":"code snippet","level":"1.2.2.1","depth":3,"path":"docs/技术文档/code snippet.md","ref":"docs/技术文档/code snippet.md","articles":[]}]},"previous":{"title":"CSS Next","level":"1.2.1.1","depth":3,"path":"docs/技术文档/CSS NEXT.md","ref":"docs/技术文档/CSS NEXT.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"前端文档","gitbook":"*"},"file":{"path":"docs/技术文档/CSS 可用特性.md","mtime":"2018-08-09T11:34:44.588Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-03T01:38:54.784Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"注释规范","level":"1.4.4","depth":2,"previous":{"title":"代码规范","level":"1.4.3","depth":2,"path":"docs/项目规范/代码规范-JavaScript-standard.md","ref":"docs/项目规范/代码规范-JavaScript-standard.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"前端文档","gitbook":"*"},"file":{"path":"docs/项目规范/代码注释规范.md","mtime":"2018-08-30T02:45:10.226Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-03T01:38:54.784Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
