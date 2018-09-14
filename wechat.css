@@ -1,4 +1,4 @@
-.impowerBox .qrcode {width: 168px;}
+.impowerBox .qrcode {width: 168px !important;}
 /* .impowerBox .title {display: ;} */
 .impowerBox .info {width: 168px;}
 /* .status_icon {
