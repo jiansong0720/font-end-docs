@@ -59,6 +59,7 @@ npm install --save-dev validate-commit-msg
 - 配置
 
 ```
+新增 .vmrc 配置文件
 git-hook
 ```
 
